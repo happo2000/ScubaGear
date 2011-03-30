@@ -3,6 +3,7 @@ package com.bukkit.happo2000.ScubaGear;
 import org.bukkit.event.player.PlayerEvent;
 import org.bukkit.event.player.PlayerKickEvent;
 import org.bukkit.event.player.PlayerListener;
+import org.bukkit.event.player.PlayerQuitEvent;
 
 public class ScubaGearPlayerListener extends PlayerListener 
 {
@@ -14,7 +15,7 @@ public class ScubaGearPlayerListener extends PlayerListener
     }
 
     @Override
-    public void onPlayerQuit(PlayerEvent event) 
+    public void onPlayerQuit(PlayerQuitEvent event) 
     {
     	plugin.removeNotifiedPlayer(event.getPlayer());
     }

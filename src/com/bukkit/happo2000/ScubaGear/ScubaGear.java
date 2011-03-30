@@ -29,7 +29,7 @@ public class ScubaGear extends JavaPlugin {
         
         PluginDescriptionFile pdfFile = this.getDescription();
     	
-    	pluginManager.registerEvent(Event.Type.ENTITY_DAMAGED, this.entityListener, Event.Priority.Lowest, this);
+    	pluginManager.registerEvent(Event.Type.ENTITY_DAMAGE, this.entityListener, Event.Priority.Lowest, this);
     	pluginManager.registerEvent(Event.Type.PLAYER_KICK, this.playerListener, Event.Priority.Lowest, this);
     	pluginManager.registerEvent(Event.Type.PLAYER_QUIT, this.playerListener, Event.Priority.Lowest, this);
     	
